@@ -1,0 +1,72 @@
+@import url('//db.onlinewebfonts.com/c/f5bd594fdf1873d09eff1f4718ff2141?family=Freestyle+Script');
+
+.header {
+    position: relative;
+    padding:20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.header > h3 {
+    color: #fff;
+    font-family: 'Freestyle Script', sans-serif ;
+    /* a changer size */
+    font-size: 70px;
+    margin: 0;
+}
+
+.header .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-menu > ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+}
+.header .header-menu > ul > li {
+    /* a changer */
+    padding: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .header-menu > ul > li.menu__active {
+    background:#FF0513;
+    margin-top: -26px;
+    padding-top: 53px;
+}
+
+.header .header-menu > button {
+    color: #fff;
+    width: 170px;
+    height: 65px;
+    border:1px solid #fff;
+    border-radius: 60px;
+    background: none;
+    font-size: 20px;
+    /* a changer */
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.header .header-menu > button:hover {
+    background: #FF0513;
+    border: none;
+    outline: none;
+}
+
+.header  > img {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    width: 300px;
+    height: 176px;
+    z-index: 1;
+}

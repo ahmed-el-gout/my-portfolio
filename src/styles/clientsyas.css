@@ -1,0 +1,120 @@
+.clientsyas {
+    width: 100%;
+    height: 700px;
+    background:#040221;
+    padding-bottom: 20px;
+}
+.clientsyas > h1{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0px;
+    padding-top: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+.clientsyas > p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    left: 80px;
+    right: 80px;
+}
+
+.clientsyas > img {
+    position: absolute;
+    left: 42%;
+    width: 215px;
+    height: 1px;
+    text-align: center;
+}
+
+.clientsyas > .container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 165px;
+}
+
+.clientsyas > .container > .container-left {
+    position: relative;
+    /* padding-right: 140px; */
+    right: 5%;
+}
+
+.clientsyas > .container > .container-left > .adam{
+    position: absolute;
+    width: 70px;
+    left: 0;
+    top: 0;
+}
+.clientsyas > .container > .container-left > .adam2{
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    top: 0;
+}
+
+.clientsyas > .container > .container-left > .sara{
+    position: absolute;
+    width: 80px;
+    right: 0;
+    top: 0;
+}
+
+.clientsyas > .container > .container-left > .sara2{
+    position: absolute;
+    width: 60px;
+    left: 10%;
+    top: 30%;
+}
+
+.clientsyas > .container > .container-left > .wissal{
+    position: absolute;
+    width: 80px;
+    right: 100px;
+    bottom: 0;
+}
+
+.clientsyas > .container > .container-left > .wissal2{
+    position: absolute;
+    width: 70px;
+    right: 40%;
+    top: 40%;
+}
+
+.clientsyas > .container > .container-left > img{
+    width: 500px;
+    position: relative;
+    padding-right: 70px;
+}
+
+.clientsyas > .container > .container-right {
+    position: relative;
+    width: 500px;
+    color: #ffffff;
+}
+.clientsyas > .container > .container-right > .small {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+}
+
+.clientsyas > .container > .container-right > .image1 {
+    position: absolute;
+    left: 0px;
+    width: 50px;
+}
+.clientsyas > .container > .container-right > .image2 {
+    position: absolute;
+    right: 0px;
+    bottom: -100px;
+    width: 50px;
+}
+.clientsyas > .container > .container-right > p {
+    position: absolute;
+    top: 40%;
+}

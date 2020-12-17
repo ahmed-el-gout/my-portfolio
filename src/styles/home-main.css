@@ -1,0 +1,112 @@
+.home-main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.main-left {
+    color: #fff;
+    padding: 35px 30px;
+    z-index: 1000;
+}
+
+.main-left > p {
+    font-size: 20px;
+}
+
+.main-left > ul {
+    display: flex;
+    list-style: none;
+}
+.main-left > ul > li {
+    cursor: pointer;
+}
+
+.main-left > ul > li > img {
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .main-left > ul > li > img:hover {
+    transform: scale(1.5);
+} */
+
+.main-left > h3 {
+    font-size: 65px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.main-left > img {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: -95px;
+}
+
+.main-left > button.first-button {
+    width: 200px;
+    height: 66px;
+    border: none;
+    background: #FF0513;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 20px ;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-left > button.first-button:hover {
+    background: none;
+    border: 1px solid #fff;
+}
+
+.main-left > button.second-button {
+    width: 200px;
+    height: 66px;
+    border: 1px solid #fff;
+    background:none;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-left > button.second-button:hover {
+    background: #FF0513;
+    border: none;
+} 
+
+.main-center > img {
+    width:480px;
+    height:550px;
+}
+
+.main-right > ul {
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+.main-right > ul > li {
+    padding: 7px;
+    border-bottom: 2px solid #707070;
+}
+
+
+.main-right > img {
+    position: absolute;
+    right: -5px;
+    bottom: 0px;
+    transform: rotate(90deg);
+    width: 300px;
+    height: 200px;
+    margin-right: -180px;
+    margin-bottom: -60px;
+    /* z-index: 1; */
+}

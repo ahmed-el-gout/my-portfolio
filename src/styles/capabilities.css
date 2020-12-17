@@ -1,0 +1,76 @@
+.capabilities {
+    width: 100%;
+    height: 700px;
+    background:#0E0C38;
+    padding-bottom: 20px;
+}
+.capabilities > h1{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0px;
+    padding-top: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+}
+.capabilities > p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    left: 80px;
+    right: 80px;
+}
+.capabilities > img {
+    position: absolute;
+    left: 42%;
+    width: 225px;
+    height: 1px;
+    text-align: center;
+}
+
+.capabilities > .row1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 152px;
+}
+.capabilities > .row1 > .container1 > img , .capabilities > .row1 > .container2 > img ,.capabilities > .row1 > .container3 > img{
+    width: 60px;
+}
+.capabilities > .row1 > .container1 , .capabilities > .row1 > .container2 , .capabilities > .row1 > .container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+.capabilities > .row1 > .container1 > p , .capabilities > .row1 > .container2 > p , .capabilities > .row1 > .container3 > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.capabilities > .row2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+}
+.capabilities > .row2 > .container1 > img , .capabilities > .row2 > .container2 > img ,.capabilities > .row2 > .container3 > img{
+    width: 60px;
+}
+
+.capabilities > .row2 > .container1 , .capabilities > .row2 > .container2 , .capabilities > .row2 > .container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+.capabilities > .row2 > .container1 > p , .capabilities > .row2 > .container2 > p , .capabilities > .row2 > .container3 > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+

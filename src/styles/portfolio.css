@@ -1,0 +1,111 @@
+.portfolio {
+    width: 97%;
+    height: 740px;
+    background: #040221;
+    padding: 24px;
+    margin-top: -10px;
+}
+
+.portfolio-top{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.portfolio-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: auto 60px; */
+}
+.portfolio-left > h2{
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+.portfolio-left > img{
+    width: 60%;
+    height:2px;
+}
+
+
+.portfolio-right {
+    right: 20px;
+    margin-right: 40px;
+}
+.portfolio-right > .btn1 {
+    background: none;
+    border-radius: 40px;
+    padding: 16px 22px;
+    border: 1px solid #ccc;
+}
+.portfolio-right > .btn1:hover {
+    background: #FF0513;
+    border: none;
+}
+
+
+.portfolio-right > .btn2 {
+    background: #FF0513;
+    border-radius: 40px;
+    padding: 16px 22px;
+    border: none;
+    margin-left: 20px;
+}
+.portfolio-right > .btn2:hover {
+    background: none;
+    border: 1px solid #ccc;
+}
+
+
+.portfolio > ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    color: #fff;
+    list-style: none;
+}
+.portfolio > ul > li {
+    margin-right: 14px;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 22px;
+    font-family: 'Poppins',sans-serif;
+} 
+.portfolio > ul > li.active {
+    color: #FF0513;
+}
+
+.row1 {
+    width: 96%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.row1 > img {
+    width: 265px;
+    height: 270px;
+    
+}
+/* .row1 > div > img.active {
+    background:url('../assets/Rectangle.png');
+    opacity: .9;
+    height: 220;
+    z-index: 3000;
+} */
+
+.row2{
+    width: 96%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.row2 > img {
+    width: 265px;
+    height: 270px;
+    
+}
