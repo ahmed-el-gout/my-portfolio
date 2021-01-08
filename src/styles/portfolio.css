@@ -2,7 +2,8 @@
     width: 97%;
     height: 740px;
     background: #040221;
-    padding: 24px;
+    /* padding: 24px; */
+    padding:22px 40px;
     margin-top: -10px;
 }
 
@@ -43,6 +44,7 @@
 .portfolio-right > .btn1:hover {
     background: #FF0513;
     border: none;
+    padding: 15px 22px;
 }
 
 
@@ -56,6 +58,7 @@
 .portfolio-right > .btn2:hover {
     background: none;
     border: 1px solid #ccc;
+    padding: 15px 21px;
 }
 
 
@@ -73,7 +76,7 @@
     font-size: 22px;
     font-family: 'Poppins',sans-serif;
 } 
-.portfolio > ul > li.active {
+.portfolio > ul > li.menu_active {
     color: #FF0513;
 }
 
@@ -89,6 +92,9 @@
     width: 265px;
     height: 270px;
     
+}
+.row1 > img.show {
+    display: none;
 }
 /* .row1 > div > img.active {
     background:url('../assets/Rectangle.png');
@@ -108,4 +114,7 @@
     width: 265px;
     height: 270px;
     
+}
+.row2 > img.show {
+    display: none;
 }

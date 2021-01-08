@@ -1,15 +1,47 @@
 import React from 'react'
 import points from '../assets/points.png';
 
+// pour le smooth scroll
+import { Link,animateScroll as scroll  } from 'react-scroll';
+
 function Header() {
+
+    function handleClick1(e) { 
+        document.querySelector('.active').classList.remove('active');
+        // if(e.target.classList.contains('active')){
+        //     e.target.classList.remove('active');
+        // } else { 
+            e.target.classList.add('active');         
+        // }
+    }
+    function  scrollToTop(e) {
+        scroll.scrollToTop();
+        document.querySelector('.active').classList.toggle('active');
+            e.target.classList.add('active');
+    }
+
+    // function componentDidMount() {
+    //     window.addEventListener('scroll', this.handleScrollMain.bind(this));
+    // }
+    // function handleScrollMain(e) {
+    //     debugger
+    //     console.log('scroll')
+    // }
+
+    // onscroll
+
+    function handleScroll() {
+        console.log('test');
+    }
+
     return (
-        <div className="header">
-                <h3>Ahmed-El-Gout</h3>
+        <div className="header" onScrollCapture={handleScroll}>
+                <h3 onClick={scrollToTop}>Ahmed-El-Gout</h3>
                 <div className="header-menu">
                     <ul>
-                        <li className="menu__active">About</li>
-                        <li>Portfolio</li>
-                        <li>Contact</li>
+                    <Link activeClass="active" to="about"  smooth={true} duration={1000}><li   onClick={handleClick1} >About</li></Link>
+                    <Link activeClass="active" to="portfolio"  smooth={true} duration={1000}><li onClick={handleClick1}  >Portfolio</li></Link>
+                    <Link activeClass="active" to="contact"  smooth={true} duration={1000}><li onClick={handleClick1}  >Contact</li></Link>
                     </ul>
                     <button  type="text" >Get started</button>
                 </div>

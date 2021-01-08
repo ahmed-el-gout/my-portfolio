@@ -18,7 +18,7 @@
     font-weight: 500;
 }
 
-.about-left > button {
+.about-left > a > button {
     background: none;
     border-radius: 60px;
     width: 202px;
@@ -28,9 +28,15 @@
     font-size: 20px;
     margin: 50px 20px;
     outline: none;
+    cursor: pointer;
 }
+/* .about-left > a > button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+} */
 
-.about-left > button:hover {
+.about-left > a > button:hover {
     background: #FF0513;
 }
 
@@ -86,7 +92,9 @@ bottom: -22px;
     height: 410px;
     background: #0E0C38;
     padding: 20px;
-    z-index: 2;
+
+    /* fach brit ndir header position fixed */
+    /* z-index: 2; */
 }
 
 .about-right > .container-img > img {

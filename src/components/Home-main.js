@@ -22,7 +22,7 @@ function HomeMain() {
                     <img src={ellipse} />
                     <p>Hello I am</p>
                     <h3>Ahmed <br></br> El-Gout</h3>
-                    <p>A young UI/UX disigner with crazy mobile & web disigne</p>
+                    <p>A young web developer (with crazy mobile & web disigne)</p>
                     <p>Find Me On</p>
                     <ul>
                         <li> <img src={insta} /></li>

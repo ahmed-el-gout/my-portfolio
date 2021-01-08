@@ -3,12 +3,16 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    padding-top: 100px;
 }
 
 .main-left {
     color: #fff;
     padding: 35px 30px;
-    z-index: 1000;
+
+
+    /* fach brit ndir header position fixed */
+    /* z-index: 1000; */
 }
 
 .main-left > p {
@@ -21,6 +25,7 @@
 }
 .main-left > ul > li {
     cursor: pointer;
+    z-index: 1;
 }
 
 .main-left > ul > li > img {
@@ -38,6 +43,7 @@
     font-size: 65px;
     font-weight: 900;
     margin: 0;
+    position: relative;
 }
 
 .main-left > img {

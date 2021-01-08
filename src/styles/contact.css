@@ -34,53 +34,53 @@
     margin-top: 20px;
 }
 
-.contact > .container {
+.contact > .container > form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
 }
-.contact > .container > .first {
+.contact > .container > form > .first {
     margin-bottom: 40px;
 }
-.contact > .container > .first > input:first-child {
+.contact > .container > form > .first > input:first-child {
     width: 391px;
     height: 36px;
     margin-right: 25px;
 }
-.contact > .container > .first > input:nth-child(2) {
+.contact > .container > form > .first > input:nth-child(2) {
     width: 391px;
     height: 36px;
     margin-left: 25px;
 }
 
 
-.contact > .container > .second {
+.contact > .container > form > .second {
     margin-bottom: 40px;
 }
-.contact > .container > .second > input:first-child {
+.contact > .container > form > .second > input:first-child {
     width: 391px;
     height: 36px;
     margin-right: 25px;
 
 }
-.contact > .container > .second > input:nth-child(2) {
+.contact > .container > form > .second > input:nth-child(2) {
     width: 391px;
     height: 36px;
     margin-left: 25px;
 }
-.contact > .container > .second > img {
+.contact > .container > form > .second > img {
     position: absolute;
     margin-left: -30px;
     padding-top: 8px;
 }
 
 
-.contact > .container > .last {
+.contact > .container > form > .last {
     margin-bottom: 20px;
 }
-.contact > .container > .last > input {
+.contact > .container > form > .last > input {
     width: 835px;
     height: 100px;
 }
@@ -89,7 +89,7 @@
     top: 0;
 } */
 
-.contact > .container >  button {
+.contact > .container > form >  button {
     width: 180px;
     height: 60px;
     border: none;
@@ -100,9 +100,10 @@
     margin: 10px 20px ;
     cursor: pointer;
     outline: none;
+    
 }
 
-.contact > .container >  button:hover {
+.contact > .container > form >  button:hover {
     border: 1px solid #ffffff;
     background: none;
 }
