@@ -1,4 +1,6 @@
 @import url('//db.onlinewebfonts.com/c/f5bd594fdf1873d09eff1f4718ff2141?family=Freestyle+Script');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 
 .footer {
     width: 100%;
@@ -18,8 +20,8 @@
     color: #ffffff;
     margin-top: 0px;
     padding-top: 20px;
-    font-family: 'Freestyle Script', sans-serif;
-    font-size: 65px;
+    font-family: 'Marck Script', sans-serif;
+    font-size: 45px;
     font-weight: 300;
     padding-top: 100px;
     margin-bottom: 0;

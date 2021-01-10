@@ -1,6 +1,6 @@
 @import url('//db.onlinewebfonts.com/c/f5bd594fdf1873d09eff1f4718ff2141?family=Freestyle+Script');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 .header {
     /* position: relative;
     padding:20px 30px;
@@ -17,13 +17,15 @@
     z-index: 2000;
     overflow: hidden;
     background: #0E0C38;
+    /* je crois que sa ne marche pas  */
+    transition-delay: 250ms;
 } 
 
 .header > h3 {
     color: #fff;
-    font-family: 'Freestyle Script', sans-serif ;
+    font-family: 'Marck Script', sans-serif ;
     /* a changer size 70 first */
-    font-size: 65px;
+    font-size: 45px;
     margin: 0;
     font-style: oblique;
     z-index: 1;

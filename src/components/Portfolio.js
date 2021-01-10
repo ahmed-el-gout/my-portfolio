@@ -92,7 +92,7 @@ function Portfolio() {
                 </div>
                 <div id="row2" className="row2">
                         <img className="filter website" src={abad} />
-                        <img className="filter website active" src={nalie} />
+                        <img className="filter logo active" src={nalie} />
                         {/* <h6>test</h6>
                         <p>toto</p> */}
                         <img className="filter logo" src={apri} />

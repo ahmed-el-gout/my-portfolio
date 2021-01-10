@@ -33,6 +33,19 @@ function Header() {
     function handleScroll() {
         console.log('test');
     }
+    
+    window.onscroll = function(e) {
+        // print "false" if direction is down and "true" if up
+        if(this.scrollY > 650){
+            console.log(this.oldScroll > this.scrollY);
+            if(this.oldScroll > this.scrollY){
+                document.querySelector('.header').style.visibility="visible";
+            }else{
+                document.querySelector('.header').style.visibility="hidden";
+            }
+            this.oldScroll = this.scrollY;
+        }
+      }
 
     return (
         <div className="header" onScrollCapture={handleScroll}>
