@@ -19,25 +19,11 @@ function Header() {
         document.querySelector('.active').classList.toggle('active');
             e.target.classList.add('active');
     }
-
-    // function componentDidMount() {
-    //     window.addEventListener('scroll', this.handleScrollMain.bind(this));
-    // }
-    // function handleScrollMain(e) {
-    //     debugger
-    //     console.log('scroll')
-    // }
-
-    // onscroll
-
-    function handleScroll() {
-        console.log('test');
-    }
     
     window.onscroll = function(e) {
         // print "false" if direction is down and "true" if up
-        if(this.scrollY > 650){
-            console.log(this.oldScroll > this.scrollY);
+        if(this.scrollY > 670){
+            // console.log(this.oldScroll > this.scrollY);
             if(this.oldScroll > this.scrollY){
                 document.querySelector('.header').style.visibility="visible";
             }else{
@@ -45,10 +31,10 @@ function Header() {
             }
             this.oldScroll = this.scrollY;
         }
-      }
+    }
 
     return (
-        <div className="header" onScrollCapture={handleScroll}>
+        <div className="header">
                 <h3 onClick={scrollToTop}>Ahmed-El-Gout</h3>
                 <div className="header-menu">
                     <ul>
