@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
+import { useIntersectionObserver } from 'react-intersection-observer-hook';
+
 import '../styles/clientsyas.css'
 import line from '../assets/Line.png'
 import map from '../assets/map.png'
@@ -9,8 +11,17 @@ import sara from '../assets/sara.png'
 
 
 function Clientsays() {
+
+    const [clientsays, { entry }] = useIntersectionObserver({threshold:.5});
+    
+    const isVisible = entry && entry.isIntersecting;
+    useEffect((e) => {
+        // console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
+        if(isVisible){ document.title = 'Clientsays'}
+    },[isVisible])
+
     return (
-        <div className="clientsyas">
+        <div className="clientsyas" ref={clientsays} >
             <h1>What My Client Says </h1>
             <img src={line} />
             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer</p>

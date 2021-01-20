@@ -1,10 +1,21 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import { useIntersectionObserver } from 'react-intersection-observer-hook';
+
 import '../styles/capabilities.css'
 import line from '../assets/Line.png'
 import capab from '../assets/capab.png'
 function Capabilities() {
+
+
+    const [capabilities, { entry }] = useIntersectionObserver({threshold:.5});
+    const isVisible = entry && entry.isIntersecting;
+    useEffect((e) => {
+        // console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
+        if(isVisible){ document.title = 'capabilities'}
+    },[isVisible])
+
     return (
-        <div className="capabilities">
+        <div className="capabilities" ref={capabilities}>
             <h1>My Capabilities </h1>
             <img src={line} />
             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer</p>

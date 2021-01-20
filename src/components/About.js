@@ -1,16 +1,24 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import '../styles/about.css';
 import Layer from '../assets/Layer.png';
 import carre from '../assets/carre.png';
 // pour telecharger le cv
 import myPDF from '../ahmed-el-gout.pdf';
+import { useIntersectionObserver } from 'react-intersection-observer-hook';
+
 
 function About() {
-    function handleScroll(e) {
-        console.log('toto');
-    }
+
+    const [about, { entry }] = useIntersectionObserver({threshold:.5});
+    const isVisible = entry && entry.isIntersecting;
+    useEffect((e) => {
+        if(isVisible){ document.title = 'about'}
+        
+    },[isVisible])
+
+    
     return (
-        <div className="about" onScroll={handleScroll}>
+        <div className="about"  ref={about}>
             <div className="about-left">
                 <div className="about-left-top">
                     <img src={carre} />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import '../styles/portfolio.css'
 import line from '../assets/Line.png';
 import maj from '../assets/maj.png';
@@ -10,15 +10,27 @@ import apri from '../assets/apri.png';
 import nalie from '../assets/nalie.png';
 // import v1 from '../assets/v1.png';
 // import Rectangle from '../assets/Rectangle.png';
+import { useIntersectionObserver } from 'react-intersection-observer-hook';
+
+
 
 
 
 function Portfolio() {
 
+    const [portfolio, { entry }] = useIntersectionObserver({threshold:.5});
+    
+    const isVisible = entry && entry.isIntersecting;
+    useEffect((e) => {
+        // console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
+        if(isVisible){ document.title = 'portfolio'}
+        
+    },[isVisible])
+
+
     function handleClick(e) { 
         document.querySelector('.menu_active').classList.remove('menu_active');
             e.target.classList.add('menu_active');
-        
         var x, i;
         var x = document.getElementsByClassName("filter");
         // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
@@ -26,18 +38,6 @@ function Portfolio() {
             RemoveClass(x[i], "show");
             if (x[i].className.indexOf(e.target.classList[1]) > -1) AddClass(x[i], "show");
         }    
-         
-        // if(e.target.classList[1] != 'all'){
-        //     elements.forEach(element => {
-        //         if(element.classList[1] != e.target.classList[1] ){
-        //             element.style.display="none";
-        //             // element.remove();
-        //         }
-        //         if(element.classList[1] === e.target.classList[1]){
-        //             element.style.display="block";
-        //         }
-        //     }) 
-        // }
     }
     function AddClass(element, name) {
         var i, arr1, arr2;
@@ -65,7 +65,7 @@ function Portfolio() {
     element.className = arr1.join(" ");
     }
     return (
-        <div className="portfolio">
+        <div className="portfolio" ref={portfolio}>
             <div className="portfolio-top">
                 <div className="portfolio-left">
                     <h2>Portfolio</h2>

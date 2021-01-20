@@ -13,19 +13,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 96%;
+    width: 100%;
     z-index: 2000;
     overflow: hidden;
     background: #0E0C38;
     /* je crois que sa ne marche pas  */
-    transition-delay: 250ms;
+    transition: .9s;
 } 
 
 .header > h3 {
     color: #fff;
     font-family: 'Marck Script', sans-serif ;
     /* a changer size 70 first */
-    font-size: 45px;
+    font-size: 45px; 
     margin: 0;
     font-style: oblique;
     z-index: 1;
@@ -69,6 +69,7 @@
     font-size: 20px;
     /* a changer */
     margin-left: 10px;
+    margin-right: 50px;
     cursor: pointer;
     outline: none;
 }

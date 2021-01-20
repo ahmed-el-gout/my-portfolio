@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
+import { useIntersectionObserver } from 'react-intersection-observer-hook';
+
 import '../styles/contact.css'
 import line from '../assets/Line.png'
 import down from '../assets/down.png'
@@ -9,6 +11,14 @@ import emailjs from 'emailjs-com'
 
 function Contact() {
 
+    const [contact, { entry }] = useIntersectionObserver({threshold:.5});
+    
+    const isVisible = entry && entry.isIntersecting;
+    useEffect((e) => {
+        // console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
+        if(isVisible){ document.title = 'contact'}
+    },[isVisible])
+
     function sendEmail(e) {
         e.preventDefault();
     
@@ -18,30 +28,27 @@ function Contact() {
           }, (error) => {
               console.log(error.text);
           });
-
           e.target.reset()
-
-        //   window.location.reload(false);
       }
        
     return (
-        <div className="contact">
+        <div className="contact" ref={ contact }>
             <img src={line} />
             <h1> thanks for give <br/> your feedback </h1>
             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer</p>
                 <div className="container">
                     <form className="container" onSubmit={sendEmail}>
                         <div className="first">
-                            <input id="name"  type="text" placeholder="Name" />
-                            <input   name="name" type="Email" placeholder="Email" />
+                            <input id="name"  type="text" placeholder="Name" required />
+                            <input   name="name" type="Email" placeholder="Email" required />
                         </div>
                         <div className="second">
-                            <input type="text" placeholder="Phone" />
-                            <input type="text" placeholder="Budget" />
+                            <input type="text" placeholder="Phone" required />
+                            <input type="text" placeholder="Budget" required />
                             <img src={down} />
                         </div>
                         <div className="last">
-                            <input id="message" name="message" type="textarea" placeholder="Message" />
+                            <input id="message" name="message" type="textarea" placeholder="Message" required />
                         </div>
                         <button type="submit"  > send </button>
                         {/* <input type="submit" value="Send" /> */}

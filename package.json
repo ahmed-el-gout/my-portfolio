@@ -2,6 +2,7 @@
   "name": "reactfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
@@ -10,6 +11,7 @@
     "file-saver": "^2.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-intersection-observer-hook": "^1.0.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-scroll": "^1.8.1",

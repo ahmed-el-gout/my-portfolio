@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
+import { useIntersectionObserver } from 'react-intersection-observer-hook';
+
 import '../styles/home-main.css';
 import ellipse from '../assets/ellipse.png';
 import profil from '../assets/profil.png';
@@ -16,8 +18,16 @@ import trois from '../assets/03.png';
 import quatre from '../assets/04.png';
 
 function HomeMain() {
+    const [homepage, { entry }] = useIntersectionObserver();
+    
+    const isVisible = entry && entry.isIntersecting;
+    useEffect((e) => {
+        console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
+        if(isVisible){ document.title = 'home-page'}
+        
+    },[isVisible])
     return (
-        <div className="home-main">
+        <div className="home-main" ref={homepage}>
                 <div className="main-left">
                     <img src={ellipse} />
                     <p>Hello I am</p>
