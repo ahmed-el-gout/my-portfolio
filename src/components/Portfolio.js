@@ -21,7 +21,7 @@ function Portfolio() {
     const [portfolio, { entry }] = useIntersectionObserver({threshold:.5});
     
     const isVisible = entry && entry.isIntersecting;
-    useEffect((e) => {
+    useEffect(() => {
         // console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
         if(isVisible){ document.title = 'portfolio'}
         
@@ -69,11 +69,11 @@ function Portfolio() {
             <div className="portfolio-top">
                 <div className="portfolio-left">
                     <h2>Portfolio</h2>
-                    <img src={line} />
+                    <img src={line} alt="alt"/>
                 </div>
                 <div className="portfolio-right">
-                    <button className="btn1"><img src={min} /></button>
-                    <button className="btn2"><img src={maj} /></button>
+                    <button className="btn1"><img src={min} alt="alt" /></button>
+                    <button className="btn2"><img src={maj} alt="alt"/></button>
                 </div>
             </div>
             <ul id="myBtnContainer">
@@ -83,20 +83,20 @@ function Portfolio() {
                 <li className="btn mobile-app" onClick={handleClick}  >Mobile-Apps</li>
             </ul>
                 <div id="row1" className="row1">
-                        <img className="filter logo" src={abad} />
-                        <img className="filter logo" src={nalie} />
+                        <img className="filter logo" src={abad} alt="alt" />
+                        <img className="filter logo" src={nalie} alt="alt" />
                         {/* <h6>test</h6>
                         <p>toto</p> */}
-                        <img className="filter mobile-app" src={apri} />
-                        <img className="filter logo" src={abad} />
+                        <img className="filter mobile-app" src={apri} alt="alt" />
+                        <img className="filter logo" src={abad} alt="alt" />
                 </div>
                 <div id="row2" className="row2">
-                        <img className="filter website" src={abad} />
-                        <img className="filter logo active" src={nalie} />
+                        <img className="filter website" src={abad} alt="alt" />
+                        <img className="filter logo active" src={nalie} alt="alt" />
                         {/* <h6>test</h6>
                         <p>toto</p> */}
-                        <img className="filter logo" src={apri} />
-                        <img className="filter mobile-app" src={abad} />
+                        <img className="filter logo" src={apri} alt="alt" />
+                        <img className="filter mobile-app" src={abad} alt="alt" />
                 </div>
         </div>
     )

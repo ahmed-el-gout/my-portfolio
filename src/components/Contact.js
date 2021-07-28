@@ -14,7 +14,7 @@ function Contact() {
     const [contact, { entry }] = useIntersectionObserver({threshold:.5});
     
     const isVisible = entry && entry.isIntersecting;
-    useEffect((e) => {
+    useEffect(() => {
         // console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
         if(isVisible){ document.title = 'contact'}
     },[isVisible])
@@ -33,7 +33,7 @@ function Contact() {
        
     return (
         <div className="contact" ref={ contact }>
-            <img src={line} />
+            <img src={line} alt="alt" />
             <h1> thanks for give <br/> your feedback </h1>
             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer</p>
                 <div className="container">
@@ -45,7 +45,7 @@ function Contact() {
                         <div className="second">
                             <input type="text" placeholder="Phone" required />
                             <input type="text" placeholder="Budget" required />
-                            <img src={down} />
+                            <img src={down} alt="alt" />
                         </div>
                         <div className="last">
                             <input id="message" name="message" type="textarea" placeholder="Message" required />

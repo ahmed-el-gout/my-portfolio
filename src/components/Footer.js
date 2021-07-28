@@ -12,16 +12,16 @@ import pinterest from '../assets/pinterest.png';
 function Footer() {
     return (
         <div className="footer">
-            <img src={line} />
+            <img src={line} alt="alt" />
             <h1>Ahmed-EL-Gout</h1>
             <p>About <span>|</span>Portfolio<span>|</span> Contact</p>
             <p>Marrakech / +212 695036910 / ahmedelgout7@gmail.com</p>
             <ul>
-                <li><img src={insta} /></li>
-                <li><img src={linkedIn} /></li>
-                <li><img src={dribbble} /></li>
-                <li><img src={behance} /></li>
-                <li><img src={pinterest} /></li>
+                <li><img src={insta} alt="alt" /></li>
+                <li><img src={linkedIn} alt="alt" /></li>
+                <li><img src={dribbble} alt="alt"/></li>
+                <li><img src={behance} alt="alt"/></li>
+                <li><img src={pinterest} alt="alt" /></li>
             </ul>
             <div className="copyright">
                 <p>copyright © 2020 el-gout | All right reserved</p>

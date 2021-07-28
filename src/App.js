@@ -8,11 +8,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 
-// import { BrowserRouter, Switch, Route } from "react-router-dom";
-// import Newroute from './components/Newroute';
-
-
-
 function App() {
   return (
     <div className="app" >
@@ -23,9 +18,6 @@ function App() {
       <Clientsays />
       <Contact />
       <Footer  />
-      {/* <BrowserRouter>
-      <Route path="/newRoute" component={Newroute}/>
-      </BrowserRouter> */}
     </div>
   );
 }

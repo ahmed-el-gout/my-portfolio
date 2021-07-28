@@ -2,13 +2,11 @@
   "name": "reactfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
     "emailjs-com": "^2.6.4",
-    "file-saver": "^2.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-intersection-observer-hook": "^1.0.4",

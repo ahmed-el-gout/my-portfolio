@@ -21,40 +21,40 @@ function HomeMain() {
     const [homepage, { entry }] = useIntersectionObserver();
     
     const isVisible = entry && entry.isIntersecting;
-    useEffect((e) => {
-        console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
-        if(isVisible){ document.title = 'home-page'}
+    useEffect(() => {
+        // console.log(`The component is ${isVisible ? "visible" : "not visible"}.`)
+        if(isVisible){ document.title = 'reactfolio-homepage'}
         
     },[isVisible])
     return (
         <div className="home-main" ref={homepage}>
                 <div className="main-left">
-                    <img src={ellipse} />
+                    <img src={ellipse} alt="alt" />
                     <p>Hello I am</p>
                     <h3>Ahmed <br></br> El-Gout</h3>
-                    <p>A young web developer (with crazy mobile & web disigne)</p>
+                    <p>A young web developer  (with crazy mobile & web disigne)</p>
                     <p>Find Me On</p>
                     <ul>
-                        <li> <img src={insta} /></li>
-                        <li> <img src={linkedIn} /></li>
-                        <li> <img src={dribbble} /></li>
-                        <li> <img src={pinterest} /></li>
-                        <li> <img src={behance} /></li>
+                        <li> <img src={insta} alt="alt" /></li>
+                        <li> <img src={linkedIn} alt="alt" /></li>
+                        <li> <img src={dribbble} alt="alt" /></li>
+                        <li> <img src={pinterest} alt="alt" /></li>
+                        <li> <img src={behance} alt="alt"/></li>
                     </ul>
                     <button className="first-button" type="text" >Hire Me</button>
                     <button className="second-button" type="text" >Portfolio</button>
                 </div>
                 <div className="main-center">
-                    <img src={profil}  />
+                    <img src={profil} alt="alt" />
                 </div>
                 <div className="main-right">
                     <ul>
-                        <li><img src={un} /></li>
-                        <li><img src={deux} /></li>
-                        <li><img src={trois} /></li>
-                        <li><img src={quatre} /></li>
+                        <li><img src={un} alt="alt" /></li>
+                        <li><img src={deux} alt="alt" /></li>
+                        <li><img src={trois} alt="alt" /></li>
+                        <li><img src={quatre} alt="alt" /></li>
                     </ul>
-                    <img src={points} />
+                    <img src={points} alt="alt" />
                 </div>
             </div>
     )

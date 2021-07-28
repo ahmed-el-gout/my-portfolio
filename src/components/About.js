@@ -11,7 +11,7 @@ function About() {
 
     const [about, { entry }] = useIntersectionObserver({threshold:.5});
     const isVisible = entry && entry.isIntersecting;
-    useEffect((e) => {
+    useEffect(() => {
         if(isVisible){ document.title = 'about'}
         
     },[isVisible])
@@ -21,7 +21,7 @@ function About() {
         <div className="about"  ref={about}>
             <div className="about-left">
                 <div className="about-left-top">
-                    <img src={carre} />
+                    <img src={carre} alt="alt" />
                     <h3>About Me</h3>
                     <div className="line"></div>
                 </div>
@@ -31,9 +31,9 @@ function About() {
             </div>
             <div className="about-right">
                 <div className="container-img">
-                    <img src={Layer} />
+                    <img src={Layer} alt="alt" />
                 </div>
-                <img src={carre} />
+                <img src={carre} alt="alt" />
             </div>
             
         </div>
